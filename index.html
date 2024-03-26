@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | News homepage</title>
+</head>
+<body>
+
+    <div id="background-overlay"></div>
+
+    <div class="top-section">
+      <img src="./assets/images/logo.svg"/>
+      <div>
+        <p class="menu-options interactive">Home</p>
+        <p class="menu-options interactive">New</p>
+        <p class="menu-options interactive">Popular</p>
+        <p class="menu-options interactive">Trending</p>
+        <p class="menu-options interactive">Categories</p>
+        <button id="menu-button" onclick="wrappingMenu()">
+          <img src="./assets/images/icon-menu.svg"/>
+        </button>
+      </div>
+    </div>
+
+    <div id="wrapping-menu">
+      <button id="close-button" onclick="closingMenu()">
+        <img src="./assets/images/icon-menu-close.svg"/>
+      </button>
+        
+      <div id="wrapping-content">
+        <p>Home</p>
+        <p>New</p>
+        <p>Popular</p>
+        <p>Trending</p>
+        <p>Categories</p>
+      </div>
+    </div>
+
+    <div class="main-image"></div>
+
+    <div class="black-container">
+      <h2 style="color: hsl(35, 77%, 62%); padding-bottom: 30px;">New</h2>
+      <div class="paragraph">
+        <h3 class="black-title interactive">Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr/>
+      </div>
+      <div class="paragraph">
+        <h3 class="black-title interactive">The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        <hr/>
+      </div>
+      <div class="paragraph">
+        <h3  class="black-title interactive">Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+
+    <div class="middle-container first">
+        <h1>
+          The Bright Future of Web 3.0?
+        </h1>
+    </div>
+
+    <div class="middle-container second">
+      <div>
+        <p>
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?
+        </p>
+      </div>
+
+      <div class="read-more interactive">
+        <p>Read more</p>
+      </div>        
+    </div>
+
+    <div class="bottom-container left">
+      <img src="./assets/images/image-retro-pcs.jpg"/>
+      <div>
+        <h3 class="numbers">01</h3>
+        <p class="title interactive">Reviving Retro PCs</p>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+
+    <div class="bottom-container middle">
+      <img src="./assets/images/image-top-laptops.jpg"/>
+      <div>
+        <h3 class="numbers">02</h3>
+        <p class="title interactive">Top 10 Laptops of 2022</p>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+
+    <div class="bottom-container right">
+      <img src="./assets/images/image-gaming-growth.jpg"/>
+      <div>
+        <h3 class="numbers">03</h3>
+        <p class="title interactive">The Growth of Gaming</p>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+
+  
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
